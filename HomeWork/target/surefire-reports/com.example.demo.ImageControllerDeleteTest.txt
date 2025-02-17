@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.ImageControllerDeleteTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.539 s <<< FAILURE! - in com.example.demo.ImageControllerDeleteTest
+testDeleteImage_ServerError  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<500> but was:<404>
+	at com.example.demo.ImageControllerDeleteTest.testDeleteImage_ServerError(ImageControllerDeleteTest.java:68)
+
+testDeleteImage_Success  Time elapsed: 0.042 s  <<< ERROR!
+java.lang.ClassCastException: class org.mockito.codegen.Transaction$MockitoMock$1919554095 cannot be cast to class javax.persistence.EntityTransaction (org.mockito.codegen.Transaction$MockitoMock$1919554095 and javax.persistence.EntityTransaction are in unnamed module of loader 'app')
+	at com.example.demo.ImageControllerDeleteTest.testDeleteImage_Success(ImageControllerDeleteTest.java:44)
+
